@@ -2,6 +2,10 @@
 # This Playbook would deploy the whole mongodb cluster with replication and sharding.
 
 - hosts: all
+  hosts: all
+  remote_user: ec2-user
+  become: yes
+
   roles:
   - role: common
 
